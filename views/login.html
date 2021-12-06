@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="./public/css/login.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <title>福祉システム</title>
+</head>
+<body>
+    <button type="button" onclick="location.href='logout'">ログアウト</button>
+    <div id="wrapper">
+        <form id="form-login" method="post">
+            <h1 class="form-heading">ログイン</h1>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input name="username" type="text" class="form-input" placeholder="アカウント">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input name="password" type="password" class="form-input" placeholder="パスワード">
+                <div id="eye">
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <input name="login" type="submit" value="ログイン" class="form-submit">
+        </form>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="public/js/passwordShowHide.js"></script>
+</html>
